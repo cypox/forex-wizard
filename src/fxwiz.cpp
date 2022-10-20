@@ -1,4 +1,6 @@
 #include "retriever.hpp"
+#include "parser.hpp"
+#include "state.hpp"
 
 #include <iostream>
 
@@ -14,7 +16,11 @@ int main(int argc, char** argv)
   fxwiz::retriever r;
   std::string res = r.fetch(argv[1]);
 
-  std::cout << res << std::endl;
+  fxwiz::parser p;
+  p.parse_content(res);
+
+  const fxwiz::state& s = p.get_state();
+  s.show_rates();
 
   return 0;
 }

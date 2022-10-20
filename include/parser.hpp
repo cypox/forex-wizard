@@ -1,18 +1,28 @@
 #pragma once
 
+#include "state.hpp"
+
 
 namespace fxwiz {
 
 class parser {
 public:
-  parser(const std::string& content) {
+  parser() : current_rates({"EUR", "USD"}) {
   }
 
   ~parser () {
   }
 
-private:
+  const state& get_state() const {
+    return current_rates;
+  }
 
-}
+  void parse_content(const std::string& content) {
+
+  }
+
+private:
+  state current_rates;
+};
 
 }
