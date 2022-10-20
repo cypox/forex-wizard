@@ -1,4 +1,4 @@
-# forex-wizard
+# forex-wizard [![Build Status](https://app.travis-ci.com/cypox/forex-wizard.svg?branch=master)](https://app.travis-ci.com/cypox/forex-wizard)
 Gets latest forex rates and find the best route to trade a given pair (either direct exchange or exchange through a set of other currencies).
 
 Steps:
