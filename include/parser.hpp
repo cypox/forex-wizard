@@ -7,7 +7,7 @@ namespace fxwiz {
 
 class parser {
 public:
-  parser() : current_rates({"EUR", "USD"}) {
+  parser(const std::vector<std::string>& c) : current_rates(c) {
   }
 
   ~parser () {
@@ -18,6 +18,7 @@ public:
   }
 
   void parse_content(const std::string& content) {
+    std::cout << content << std::endl;
   }
 
 private:

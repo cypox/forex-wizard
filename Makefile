@@ -8,4 +8,4 @@ clean:
 	rm -rf bin/*
 
 test:
-	./bin/fxwiz https://www.oanda.com/currency-converter/live-exchange-rates/
+	./bin/fxwiz https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml
