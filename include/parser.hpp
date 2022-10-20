@@ -18,7 +18,6 @@ public:
   }
 
   void parse_content(const std::string& content) {
-    std::cout << content << std::endl;
   }
 
 private:
